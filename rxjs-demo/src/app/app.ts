@@ -1,10 +1,11 @@
-import { Component, signal, OnDestroy } from '@angular/core';
+import { Component, signal, OnDestroy} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Observable, Subscription, interval } from 'rxjs';
+import { Observable, Subscription, interval} from 'rxjs';
+import { RxjsOperatorComponent } from './rxjs-operator-component/rxjs-operator-component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RxjsOperatorComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
